@@ -12,5 +12,12 @@
     "title": "Tidy Tuesday 1",
     "section": "",
     "text": "pixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point(color= \"navy\")+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")"
+  },
+  {
+    "objectID": "TidyTuesday.html",
+    "href": "TidyTuesday.html",
+    "title": "Tidy Tuesday 1",
+    "section": "",
+    "text": "pixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point(color= \"navy\")+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")"
   }
 ]

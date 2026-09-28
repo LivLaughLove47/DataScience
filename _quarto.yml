@@ -9,5 +9,5 @@ website:
       - text: "Data Viz"
         menu: 
          - text: "Pixar Movies"
-           href: TidyTuesday.html
+           href: TidyTuesday.qmd
          
