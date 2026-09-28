@@ -2,15 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "LivLaughLove47.github.io",
+    "title": "Liv Rosenthal’s Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hello! I am Olivia (Liv) Rosenthal and I am taking Foundations of Data Science at Pomona College. I love going on runs, crafting, summer camp and the beach. I want to be a teacher for either elementary or middle school. I love math and find it incredibly challenging. A fun fact about me is that I played a tap dancing rat in Shrek the Musical in 6th grade. I don’t like cilantro, the act of being non-chalant and party poopers."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Tidy Tuesday 1",
     "section": "",
-    "text": "About this site"
+    "text": "pixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point(color= \"navy\")+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")"
   }
 ]

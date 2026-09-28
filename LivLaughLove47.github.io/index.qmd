@@ -1,7 +1,11 @@
 ---
-title: "LivLaughLove47.github.io"
+title: "Liv Rosenthal's Website"
+image: "Olivia.jpeg"
+about:
+  template: jolla
+  image-shape: round
+  image-width: 17em
+toc: false
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello! I am Olivia (Liv) Rosenthal and I am taking Foundations of Data Science at Pomona College. I love going on runs, crafting, summer camp and the beach. I want to be a teacher for either elementary or middle school. I love math and find it incredibly challenging. A fun fact about me is that I played a tap dancing rat in Shrek the Musical in 6th grade. I don't like cilantro, the act of being non-chalant and party poopers. 

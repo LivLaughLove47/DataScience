@@ -3,17 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "LivLaughLove47.github.io"
+  title: "Liv Rosenthal's Website!"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
-format:
-  html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
+    right: 
+      - text: "Data Viz"
+        menu: 
+         - text: "Pixar Movies"
+           href: TidyTuesday.html
+         

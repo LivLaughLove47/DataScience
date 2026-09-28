@@ -1,0 +1,35 @@
+---
+title: "Tidy Tuesday 1"
+author: "Olivia Rosenthal"
+format: html
+execute: 
+  warning: false
+  message: false
+---
+
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(openintro)
+pixar_films <- read_csv(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/pixar_films.csv"
+)
+
+public_response <- read_csv(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/public_response.csv"
+)
+```
+
+```{r}
+pixar_data <- pixar_films |>
+  left_join(public_response, by = "film")
+
+```
+
+```{r}
+ggplot(pixar_data, aes(x = release_date, y = run_time))+
+  geom_point(color= "navy")+
+  labs(x = "Release Date", y="Run Time min", title = "Pixar Films Release Date and Run Times")
+```
+
