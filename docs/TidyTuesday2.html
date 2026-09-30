@@ -8,7 +8,7 @@
 
 <meta name="author" content="Olivia Rosenthal">
 
-<title>Tidy Tuesday 2 – Liv Rosenthal’s Website!</title>
+<title>Taylor Swift - Tidy Tuesday 2 – Liv Rosenthal’s Website!</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tidy Tuesday 2</h1>
+<h1 class="title">Taylor Swift - Tidy Tuesday 2</h1>
 </div>
 
 
@@ -182,10 +182,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Taylor_Swift, <span class="fu">aes</span>(<span class="at">x =</span> loudness, <span class="at">y =</span> danceability, <span class="at">color =</span> album_name))<span class="sc">+</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Loudness"</span>, <span class="at">y=</span><span class="st">"Danceability"</span>, <span class="at">title =</span> <span class="st">"Taylor Swift Danceability"</span>, <span class="at">color =</span> <span class="st">"Album"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_taylor_d</span>() <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Loudness"</span>, <span class="at">y=</span><span class="st">"Danceability"</span>, <span class="at">title =</span> <span class="st">"Taylor Swift Danceability"</span>, <span class="at">color =</span> <span class="st">"Album"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -194,8 +196,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p>The data for this visualization comes from the <a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2023/2023-10-17">TidyTuesday Taylor Swift dataset</a>.</p>
+<p><strong>Original data citation:</strong><br>
+[Thompson, W. Jake. <em>taylor: Lyrics and Song Data for Taylor Swift’s Discography</em>. Data sourced from Genius and the Spotify API.]</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,15 +1,19 @@
 ---
-title: "Tidy Tuesday 2"
+title: "Taylor Swift - Tidy Tuesday 2"
 author: "Olivia Rosenthal"
 format: html
 execute: 
   warning: false
   message: false
 ---
+## Intro
+The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.
+
 ```{r}
 #| echo: false
 library(tidyverse)
 library(openintro)
+library(taylor)
 Taylor_Swift <- read_csv(
   "https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2023/2023-10-17/taylor_album_songs.csv"
 )
@@ -18,5 +22,15 @@ Taylor_Swift <- read_csv(
 ```{r}
 ggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+
   geom_point()+
+  scale_color_taylor_d() +
   labs(x = "Loudness", y="Danceability", title = "Taylor Swift Danceability", color = "Album")
 ```
+
+## Data Source
+
+The data for this visualization comes from the 
+[TidyTuesday Taylor Swift dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2023/2023-10-17).
+
+**Original data citation:**  
+Thompson, W. Jake. *taylor: Lyrics and Song Data for Taylor Swift's Discography*. 
+Data sourced from Genius and the Spotify API.

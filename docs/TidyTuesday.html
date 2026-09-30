@@ -8,7 +8,7 @@
 
 <meta name="author" content="Olivia Rosenthal">
 
-<title>Tidy Tuesday 1 – Liv Rosenthal’s Website!</title>
+<title>Pixar Movies - Tidy Tuesday 1 – Liv Rosenthal’s Website!</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tidy Tuesday 1</h1>
+<h1 class="title">Pixar Movies - Tidy Tuesday 1</h1>
 </div>
 
 
@@ -182,13 +182,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="intro" class="level1">
+<h1>Intro</h1>
+<p>Everyone loves a good Pixar movie. You go as a kid, you go as a parent, you go as a college student who misses the innocence and nostalgia that Pixar movies inspire. But why does it feel like every movie is so darn long these days? Let’s explore that through a plot.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pixar_data <span class="ot">&lt;-</span> pixar_films <span class="sc">|&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(public_response, <span class="at">by =</span> <span class="st">"film"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pixar_data, <span class="fu">aes</span>(<span class="at">x =</span> release_date, <span class="at">y =</span> run_time))<span class="sc">+</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span> <span class="st">"navy"</span>)<span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Release Date"</span>, <span class="at">y=</span><span class="st">"Run Time min"</span>, <span class="at">title =</span> <span class="st">"Pixar Films Release Date and Run Times"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
@@ -198,8 +201,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<section id="data-source" class="level3">
+<h3 class="anchored" data-anchor-id="data-source">Data Source</h3>
+<p>Data for this visualization was accessed through the <a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-03-11">TidyTuesday Pixar Films dataset</a>.</p>
+<p><strong>Original data:</strong><br>
+Leung, Eric. <em>pixarfilms: An R Data Package to Explore Pixar Films, the People, and Reception Data</em>. Data provided mostly in part by Wikipedia.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,5 +1,5 @@
 ---
-title: "Tidy Tuesday 1"
+title: "Pixar Movies - Tidy Tuesday 1"
 author: "Olivia Rosenthal"
 format: html
 execute: 
@@ -7,6 +7,8 @@ execute:
   message: false
 ---
 
+## Intro
+Everyone loves a good Pixar movie. You go as a kid, you go as a parent, you go as a college student who misses the innocence and nostalgia that Pixar movies inspire. But why does it feel like every movie is so darn long these days? Let's explore that through a plot. 
 
 ```{r}
 #| echo: false
@@ -33,3 +35,11 @@ ggplot(pixar_data, aes(x = release_date, y = run_time))+
   labs(x = "Release Date", y="Run Time min", title = "Pixar Films Release Date and Run Times")
 ```
 
+### Data Source
+
+Data for this visualization was accessed through the 
+[TidyTuesday Pixar Films dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-03-11).
+
+**Original data:**  
+Leung, Eric. *pixarfilms: An R Data Package to Explore Pixar Films, the People, and Reception Data*. 
+Data provided mostly in part by Wikipedia.
