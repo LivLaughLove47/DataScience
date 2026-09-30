@@ -8,6 +8,9 @@ website:
     right: 
       - text: "Data Viz"
         menu: 
-         - text: "Pixar Movies"
-           href: TidyTuesday.qmd
-         
+          - text: "Pixar Movies"
+            href: TidyTuesday.qmd
+          - text: "Taylor Swift"
+            href: TidyTuesday2.qmd
+
+    

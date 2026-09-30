@@ -6,3 +6,17 @@ execute:
   warning: false
   message: false
 ---
+```{r}
+#| echo: false
+library(tidyverse)
+library(openintro)
+Taylor_Swift <- read_csv(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/refs/heads/main/data/2023/2023-10-17/taylor_album_songs.csv"
+)
+```
+
+```{r}
+ggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+
+  geom_point()+
+  labs(x = "Loudness", y="Danceability", title = "Taylor Swift Danceability", color = "Album")
+```

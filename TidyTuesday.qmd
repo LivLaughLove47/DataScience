@@ -29,7 +29,7 @@ pixar_data <- pixar_films |>
 
 ```{r}
 ggplot(pixar_data, aes(x = release_date, y = run_time))+
-  geom_point(color= "navy")+
+  geom_point()+
   labs(x = "Release Date", y="Run Time min", title = "Pixar Films Release Date and Run Times")
 ```
 
