@@ -25,13 +25,20 @@
     "href": "TidyTuesday2.html",
     "title": "Taylor Swift - Tidy Tuesday 2",
     "section": "",
-    "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
+    "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\n\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
   },
   {
     "objectID": "TidyTuesday2.html#data-source",
     "href": "TidyTuesday2.html#data-source",
     "title": "Taylor Swift - Tidy Tuesday 2",
     "section": "Data Source",
-    "text": "Data Source\nThe data for this visualization comes from the TidyTuesday Taylor Swift dataset.\nOriginal data citation:\n[Thompson, W. Jake. taylor: Lyrics and Song Data for Taylor Swift’s Discography. Data sourced from Genius and the Spotify API.]"
+    "text": "Data Source\nThe data for this visualization comes from the TidyTuesday Taylor Swift dataset.\nOriginal data citation:\nThompson, W. Jake. taylor: Lyrics and Song Data for Taylor Swift’s Discography. Data sourced from Genius and the Spotify API."
+  },
+  {
+    "objectID": "TidyTuesday2.html#intro",
+    "href": "TidyTuesday2.html#intro",
+    "title": "Taylor Swift - Tidy Tuesday 2",
+    "section": "",
+    "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\n\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
   }
 ]
