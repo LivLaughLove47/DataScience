@@ -1,28 +1,14 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Liv Rosenthal’s Website",
-    "section": "",
-    "text": "Hello! I am Olivia (Liv) Rosenthal and I am taking Foundations of Data Science at Pomona College. I love going on runs, crafting, summer camp and the beach. I want to be a teacher for either elementary or middle school. I love math and find it incredibly challenging. A fun fact about me is that I played a tap dancing rat in Shrek the Musical in 6th grade. I don’t like cilantro, the act of being non-chalant and party poopers."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Tidy Tuesday 1",
-    "section": "",
-    "text": "pixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point(color= \"navy\")+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")"
-  },
-  {
-    "objectID": "TidyTuesday.html",
-    "href": "TidyTuesday.html",
-    "title": "Pixar Movies - Tidy Tuesday 1",
-    "section": "",
-    "text": "Intro\nEveryone loves a good Pixar movie. You go as a kid, you go as a parent, you go as a college student who misses the innocence and nostalgia that Pixar movies inspire. But why does it feel like every movie is so darn long these days? Let’s explore that through a plot.\n\npixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point()+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")\n\n\n\n\n\n\n\n\n\nData Source\nData for this visualization was accessed through the TidyTuesday Pixar Films dataset.\nOriginal data:\nLeung, Eric. pixarfilms: An R Data Package to Explore Pixar Films, the People, and Reception Data. Data provided mostly in part by Wikipedia."
-  },
-  {
     "objectID": "TidyTuesday2.html",
     "href": "TidyTuesday2.html",
+    "title": "Taylor Swift - Tidy Tuesday 2",
+    "section": "",
+    "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\n\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
+  },
+  {
+    "objectID": "TidyTuesday2.html#intro",
+    "href": "TidyTuesday2.html#intro",
     "title": "Taylor Swift - Tidy Tuesday 2",
     "section": "",
     "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\n\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
@@ -35,10 +21,24 @@
     "text": "Data Source\nThe data for this visualization comes from the TidyTuesday Taylor Swift dataset.\nOriginal data citation:\nThompson, W. Jake. taylor: Lyrics and Song Data for Taylor Swift’s Discography. Data sourced from Genius and the Spotify API."
   },
   {
-    "objectID": "TidyTuesday2.html#intro",
-    "href": "TidyTuesday2.html#intro",
-    "title": "Taylor Swift - Tidy Tuesday 2",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Liv Rosenthal’s Website",
     "section": "",
-    "text": "The world has grown up along side Taylor Swift, and with that, her music has changed. Here is a visualization of her songs relationship to loudness and danceability. Each point represents a song and each color represents one of her albums. This data set was made in 2023 so it includes her songs and albums up to that date.\n\nggplot(Taylor_Swift, aes(x = loudness, y = danceability, color = album_name))+\n  geom_point()+\n  scale_color_taylor_d() +\n  labs(x = \"Loudness\", y=\"Danceability\", title = \"Taylor Swift Danceability\", color = \"Album\")"
+    "text": "Hello! I am Olivia (Liv) Rosenthal and I am taking Foundations of Data Science at Pomona College. I love going on runs, crafting, summer camp and the beach. I want to be a teacher for either elementary or middle school. I love math and find it incredibly challenging. A fun fact about me is that I played a tap dancing rat in Shrek the Musical in 6th grade. I don’t like cilantro, the act of being non-chalant and party poopers."
+  },
+  {
+    "objectID": "TidyTuesday.html",
+    "href": "TidyTuesday.html",
+    "title": "Pixar Movies - Tidy Tuesday 1",
+    "section": "",
+    "text": "Everyone loves a good Pixar movie. You go as a kid, you go as a parent, you go as a college student who misses the innocence and nostalgia that Pixar movies inspire. But why does it feel like every movie is so darn long these days? Let’s explore that through a plot.\n\npixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point()+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")\n\n\n\n\n\n\n\n\n\n\nData for this visualization was accessed through the TidyTuesday Pixar Films dataset.\nOriginal data:\nLeung, Eric. pixarfilms: An R Data Package to Explore Pixar Films, the People, and Reception Data. Data provided mostly in part by Wikipedia."
+  },
+  {
+    "objectID": "TidyTuesday.html#intro",
+    "href": "TidyTuesday.html#intro",
+    "title": "Pixar Movies - Tidy Tuesday 1",
+    "section": "",
+    "text": "Everyone loves a good Pixar movie. You go as a kid, you go as a parent, you go as a college student who misses the innocence and nostalgia that Pixar movies inspire. But why does it feel like every movie is so darn long these days? Let’s explore that through a plot.\n\npixar_data &lt;- pixar_films |&gt;\n  left_join(public_response, by = \"film\")\n\n\nggplot(pixar_data, aes(x = release_date, y = run_time))+\n  geom_point()+\n  labs(x = \"Release Date\", y=\"Run Time min\", title = \"Pixar Films Release Date and Run Times\")\n\n\n\n\n\n\n\n\n\n\nData for this visualization was accessed through the TidyTuesday Pixar Films dataset.\nOriginal data:\nLeung, Eric. pixarfilms: An R Data Package to Explore Pixar Films, the People, and Reception Data. Data provided mostly in part by Wikipedia."
   }
 ]
